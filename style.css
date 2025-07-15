@@ -1,0 +1,31 @@
+/* Stylesheet */
+
+* {
+    background-color:#DAD1C7;
+}
+
+.entrance {
+    height: 100vh; /* fills the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrance img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.entrance img:hover {
+  animation: wiggle 0.4s ease;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+  75% { transform: rotate(2deg); }
+  100% { transform: rotate(0deg); }
+}
