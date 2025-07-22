@@ -27,6 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100vh;
 }
 
@@ -41,6 +42,7 @@
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
+    transform: rotate(1deg);
 }
 
 .center-img img:hover {
@@ -49,10 +51,11 @@
 
 .upperleft-img {
     position: absolute;
-    top: 30px;
+    top: 70px;
     left: 440px;
     height: auto;
     z-index: 2;
+    transform: rotate(-2deg);
 }
 
 .upperleft-img img {
@@ -68,10 +71,11 @@
 
 .directright-img {
     position: absolute;
-    top: 250px;
+    top: 90px;
     right: 440px;
     height: auto;
     z-index: 2;
+    transform: rotate(-2deg);
 }
 
 .directright-img img {
@@ -87,10 +91,11 @@
 
 .bottomleft-img {
     position: absolute;
-    bottom: 35px;
+    bottom: 135px;
     left: 420px;
     height: auto;
     z-index: 2;
+    transform: rotate(2deg);
 }
 
 .bottomleft-img img {
@@ -101,6 +106,26 @@
 }
 
 .bottomleft-img img:hover {
+    animation: wiggle 0.4s ease;
+}
+
+.bottomright-img {
+    position: absolute;
+    bottom: 135px;
+    right: 420px;
+    height: auto;
+    z-index: 2;
+    transform: rotate(5deg);
+}
+
+.bottomright-img img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.bottomright-img img:hover {
     animation: wiggle 0.4s ease;
 }
 
@@ -146,8 +171,23 @@
     font-family: 'TheGoodMonolith', sans-serif; 
     font-size: 1.2rem;
     color: #66021F;
-    padding: 0.3rem 0.6rem;
+    padding: 0.3rem 0.6rem; 
     text-align: center;
+}
+
+.site-label2 {
+  padding: 0.1rem 0.5rem;
+  color: #000000;
+  font-family: 'TheGoodMonolith', sans-serif; 
+  border: 1px solid black;
+  border-radius: 50px; 
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  width: fit-content;  
+  display: block;                     
+  margin: 0.4rem auto 0;
 }
 
 @keyframes wiggle {
