@@ -1,8 +1,12 @@
 /* Stylesheet */
 
+/* Applies to All */
+
 * {
     background-color: #DAD1C7;
 }
+
+/* Entrance Page */
 
 .entrance {
     height: 100vh; 
@@ -21,6 +25,39 @@
 .entrance img:hover {
     animation: wiggle 0.4s ease;
 }
+
+/* Index Page Nav */
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+    padding: .5rem 0;
+    border-bottom: 1px solid #cfc6bd;
+}
+
+.nav-bar a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.nav-title {
+    font-family: 'Motague', sans-serif;                                            
+    font-size: 3rem;
+    color: #342f2d;
+    text-align: center;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.moth-sticker {
+    display: block;
+    height: 80px;
+    width: auto;
+}
+
+/* Index Page Images */
 
 .img-wrapper {
     position: relative;
@@ -129,42 +166,7 @@
     animation: wiggle 0.4s ease;
 }
 
-.nav-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem; 
-    padding: .5rem 0;
-    border-bottom: 1px solid #cfc6bd;
-}
-
-.nav-title {
-    font-family: 'Motague', sans-serif;                                            
-    font-size: 3rem;
-    color: #342f2d;
-    text-align: center;
-    letter-spacing: 1px;
-    font-style: italic;
-}
-
-.moth-sticker {
-    display: block;
-    height: 80px;
-    width: auto;
-}
-
-.about {
-    text-align: center;
-    color: #1E1D1D;
-    font-size: 2em;
-    font-style: italic;
-    margin-top: 20rem;
-    padding: 0 16rem;
-    text-align: justify;
-    text-decoration: underline;
-    text-decoration-color: #929FA7;
-    text-underline-offset: 4px;
-}
+/* Labels Under Images */
 
 .site-label {
     display: block;
@@ -178,7 +180,6 @@
 .site-label2 {
   padding: 0.1rem 0.5rem;
   color: #000000;
-  font-family: 'TheGoodMonolith', sans-serif; 
   border: 1px solid black;
   border-radius: 50px; 
   font-family: sans-serif;
@@ -189,6 +190,48 @@
   display: block;                     
   margin: 0.4rem auto 0;
 }
+
+/* About Page */
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    max-width: 600px; 
+    margin: 0 auto; 
+    outline: 1px solid #1E1D1D;
+    margin-top: 6rem;
+    padding: 1rem 4rem 1rem 4rem;
+}
+
+.about {
+    color: #1E1D1D;
+    font-size: 2em;
+    font-family: 'TheGoodMonolith', sans-serif;                    
+    line-height: 2rem;
+}
+
+.bat-sticker {
+    display: block;
+    height: 80px;
+    width: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.bat-sticker img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.batsticker img:hover {
+    animation: wiggle 0.4s ease;
+}
+
+/* IMG Wiggle Effect */
 
 @keyframes wiggle {
   0% { transform: rotate(0deg); }
