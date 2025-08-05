@@ -180,7 +180,7 @@
 .site-label2 {
   padding: 0.1rem 0.5rem;
   color: #000000;
-  border: 1px solid black;
+  border: 1px solid #1E1D1D;
   border-radius: 50px; 
   font-family: sans-serif;
   font-size: 1rem;
@@ -197,38 +197,95 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: justify;
-    max-width: 600px; 
-    margin: 0 auto; 
+    margin-top: 10rem; 
     outline: 1px solid #1E1D1D;
-    margin-top: 6rem;
-    padding: 1rem 4rem 1rem 4rem;
+    padding: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    gap: 2rem;
+    width: 100%;
+}
+
+.about-image {
+    width: 250px;
+    height: auto;
+    flex-shrink: 0;
 }
 
 .about {
-    color: #1E1D1D;
-    font-size: 2em;
-    font-family: 'TheGoodMonolith', sans-serif;                    
-    line-height: 2rem;
+    max-width: 500px;
+    font-size: 1.4em;
+    font-family: 'Bacasime Antique', sans-serif;
+    color: #342f2d;
+    line-height: 1.7rem;
+    text-align: justify;
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Motague', sans-serif;  
+    color: #342f2d;
 }
 
 .bat-sticker {
     display: block;
+    margin: 1rem auto;
     height: 80px;
     width: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
-.bat-sticker img {
-    max-width: 100%;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+.socials-wrapper {
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.batsticker img:hover {
-    animation: wiggle 0.4s ease;
+/* Closet Page */
+
+.outer-wrapper {
+  display: flex;
+  justify-content: center; /* center the entire grid on the page */
+  padding: 2rem;
+}
+
+.clothing-grid > div {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  flex: 0 1 400px; /* flex-grow: 0; flex-shrink: 1; flex-basis: 400px */
+}
+
+.clothing-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clothing-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* rows start at left */
+  max-width: 1328px; /* 3 items + 2 gaps (400*3 + 32*2) */
+  width: 100%;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.clothing {
+
 }
 
 /* IMG Wiggle Effect */
